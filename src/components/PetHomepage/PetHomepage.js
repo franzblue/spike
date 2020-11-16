@@ -16,10 +16,20 @@ class PetHomepage extends Component {
     this.props.history.push('/1');
   }
 
+  componentDidMount = () => {
+    this.getPet();
+  }
+
+  getPet = () => {
+    console.log('get pet');
+    this.props.dispatch( {type:'GET_PET'});
+  }
+
   render() {
     return (
       <div>
         <h2>{this.state.heading}</h2>
+        {JSON.stringify(this.props.store.pet)}
         <p>This describes the whole app.</p>
         <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur

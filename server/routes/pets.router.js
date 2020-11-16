@@ -7,6 +7,16 @@ const router = express.Router();
  */
 router.get('/', (req, res) => {
   // GET route code here
+  const queryText = `SELECT * FROM "z-pets" 
+                     JOIN "user" ON "z-pets"."user_id" = 1 
+                     WHERE "z-pets"."health" > 0 
+                     ORDER BY "user"."id" ASC LIMIT 1;`
+  pool.query(queryText)
+    .then((results) => res.send(results.rows))
+    .catch((error) => {
+      console.log(error);
+      res.sendStatus(500);
+    });
 });
 
 /**
