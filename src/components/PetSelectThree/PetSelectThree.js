@@ -21,11 +21,12 @@ class PetThree extends Component {
 
   selectPet = () => {
     if(this.state.name === '' || this.state.name === null || this.state.name === undefined) {
-      alert('Please enter a name.')
+      alert('Please enter a name.');
     }
     else {
             console.log('selected', this.state.temperament);
-      this.props.dispatch( {type: 'SELECT_PET', payload: this.state})
+      this.props.dispatch( {type: 'SELECT_PET', payload: this.state});
+      alert('Congrats on the new pet!');
     }
   }
 
