@@ -46,7 +46,7 @@ class PetTwo extends Component {
       <div>
         <h2>{this.state.temperament}</h2>
         <p className="pettwo"></p>
-        <p>Although this Z-Pet may look down, it is only because it's heart is so big.</p>
+        <p>Although this Z-Pet may look down, that is only because it's heart is so big.</p>
         <p>Is it possible to love something too much?</p>
         <button onClick={this.prevPage}>View previous pet</button>
         <input onChange={(event) => this.handleChange(event, 'name')} type="text" placeholder="Give it a name!"></input>

@@ -46,7 +46,7 @@ class PetOne extends Component {
       <div>
         <h2>{this.state.temperament}</h2>
         <p className='petone'></p>
-        <p>Happy Z-Pets love to play and frolick out doors.</p>
+        <p>Happy Z-Pets love to play and frolic outdoors.</p>
         <p>They also tell the best jokes!</p>
         <button onClick={this.prevPage}>Back to HomePage</button>
         <input onChange={(event) => this.handleChange(event, 'name')} type="text" placeholder="Give it a name!"></input>
