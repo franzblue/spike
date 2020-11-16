@@ -98,11 +98,11 @@ class App extends Component {
               authRedirect="/user"
             />
 
-              <Route exact path="/pethomepage" component={PetHomepage} />
-              <Route exact path="/1" component={PetSelectOne}/>
-              <Route exact path="/2" component={PetSelectTwo}/>
-              <Route exact path="/3" component={PetSelectThree}/>
-              <Route exact path="/4" component={PetSelectFour}/>
+              <ProtectedRoute exact path="/pethomepage" component={PetHomepage} />
+              <ProtectedRoute exact path="/1" component={PetSelectOne}/>
+              <ProtectedRoute exact path="/2" component={PetSelectTwo}/>
+              <ProtectedRoute exact path="/3" component={PetSelectThree}/>
+              <ProtectedRoute exact path="/4" component={PetSelectFour}/>
 
             {/* If none of the other routes matched, we will show a 404. */}
             <Route render={() => <h1>404</h1>} />
