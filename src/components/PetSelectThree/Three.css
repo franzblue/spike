@@ -2,7 +2,7 @@ div {
     text-align: center;
   }
 
-.petthree {
+.angry {
     position: absolute;
     animation: petthree 1s infinite;
     -webkit-animation: petthree 1s infinite;

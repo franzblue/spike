@@ -2,7 +2,7 @@ div {
   text-align: center;
 }
 
-.petone {
+.happy {
     position: absolute;
     animation: petone 1s infinite;
     -webkit-animation: petone 1s infinite;

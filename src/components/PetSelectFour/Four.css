@@ -2,7 +2,7 @@ div {
     text-align: center;
   }
 
-.petfour {
+.aloof {
     position: absolute;
     animation: petfour 1s infinite;
     -webkit-animation: petfour 1s infinite;

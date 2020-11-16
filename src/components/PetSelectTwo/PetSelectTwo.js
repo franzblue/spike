@@ -3,10 +3,6 @@ import { connect } from 'react-redux';
 import mapStoreToProps from '../../redux/mapStoreToProps';
 import './Two.css';
 
-// Basic class component structure for React with default state
-// value setup. When making a new component be sure to replace
-// the component name TemplateClass with the name for the new
-// component.
 class PetTwo extends Component {
   state = {
     temperament: 'Sad',
@@ -45,7 +41,7 @@ class PetTwo extends Component {
     return (
       <div>
         <h2>{this.state.temperament}</h2>
-        <p className="pettwo"></p>
+        <p className="sad"></p>
         <p>Although this Z-Pet may look down, that is only because it's heart is so big.</p>
         <p>Is it possible to love something too much?</p>
         <button onClick={this.prevPage}>View previous pet</button>
