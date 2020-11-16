@@ -29,7 +29,7 @@ class PetHomepage extends Component {
     return (
       <div>
         <h2>{this.state.heading}</h2>
-        {JSON.stringify(this.props.store.pet)}
+        {JSON.stringify(this.props.store.pet.name)}
         <p>This describes the whole app.</p>
         <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur

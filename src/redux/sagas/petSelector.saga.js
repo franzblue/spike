@@ -14,7 +14,7 @@ function* getPet() {
   try {
     const response = yield axios.get('/api/pets');
     console.log(response.data);
-    yield put ( {type:'SET_PET', payload: response.data} );
+    yield put ( {type:'SET_PET', payload: response.data[0]} );
   } catch (error) {
     console.log(error);
   }
