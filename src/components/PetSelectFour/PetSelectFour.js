@@ -9,6 +9,11 @@ class PetFour extends Component {
     name: ''
   };
 
+  nextPage = () => {
+    console.log('clicked');
+    this.props.history.push('/PetHomepage');
+  }
+
   prevPage = () => {
     console.log('clicked');
     this.props.history.push('/3');
@@ -22,6 +27,7 @@ class PetFour extends Component {
             console.log('selected', this.state.temperament);
       this.props.dispatch( {type: 'SELECT_PET', payload: this.state});
       alert('Congrats on the new pet!');
+      this.props.history.push('/Home');
     }
   }
 
@@ -42,6 +48,7 @@ class PetFour extends Component {
         <p>This lil guy has no idea what's going on, huh?</p>
         <button onClick={this.prevPage}>View previous pet</button>
         <input onChange={(event) => this.handleChange(event, 'name')} type="text" placeholder="Give it a name!"></input>
+        <button onClick={this.nextPage}>Back to HomePage</button>
         <br/>
         <button onClick={this.selectPet}>Select this Pet!</button>
       </div>
