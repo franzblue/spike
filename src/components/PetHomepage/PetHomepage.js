@@ -33,9 +33,9 @@ class PetHomepage extends Component {
         {JSON.stringify(this.props.store.pet)}
 
 
-        
+          <div className="description">
                 <p>This describes the whole app.</p>
-        <p>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
               id felis metus. Vestibulum et pulvinar tortor. Morbi pharetra
               lacus ut ex molestie blandit. Etiam et turpis sit amet risus
@@ -66,6 +66,7 @@ class PetHomepage extends Component {
               Nullam non fermentum mauris. Sed in enim ac turpis faucibus
               pretium in sit amet nisi.
             </p>
+          </div>
             
 
         <button onClick={this.nextPage}>Ready to Choose Pet!</button>

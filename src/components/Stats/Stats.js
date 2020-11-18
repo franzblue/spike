@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import mapStoreToProps from '../../redux/mapStoreToProps';
-import './Nest.css';
+import './Stats.css';
 
-class Nest extends Component {
+class Stats extends Component {
 
   componentDidMount = () => {
     this.getPet();
@@ -41,4 +41,4 @@ class Nest extends Component {
   }
 }
 
-export default connect(mapStoreToProps)(Nest);
+export default connect(mapStoreToProps)(Stats);
