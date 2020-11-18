@@ -132,7 +132,7 @@ class App extends Component {
             <ProtectedRoute
               exact 
               path="/stats" 
-              component={stats} 
+              component={Stats} 
             />
 
             {/* If none of the other routes matched, we will show a 404. */}
