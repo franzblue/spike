@@ -9,7 +9,7 @@ div {
     -moz-animation: aloof 1s infinite;
     -o-animation: aloof 1s infinite;
     position: fixed;
-    top:-125%; right:-75%; left:-100%; bottom:-100%;
+    top:-125%; right:-70%; left:-100%; bottom:-100%;
     margin:auto;
   }
   

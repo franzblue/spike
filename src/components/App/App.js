@@ -24,6 +24,7 @@ import PetSelectOne from '../PetSelectOne/PetSelectOne';
 import PetSelectTwo from '../PetSelectTwo/PetSelectTwo';
 import PetSelectThree from '../PetSelectThree/PetSelectThree';
 import PetSelectFour from '../PetSelectFour/PetSelectFour';
+import Nest from '../Nest/Nest';
 import './App.css';
 
 
@@ -126,6 +127,12 @@ class App extends Component {
             exact 
             path="/4" 
             component={PetSelectFour}
+            />
+
+            <ProtectedRoute
+              exact 
+              path="/nest" 
+              component={Nest} 
             />
 
             {/* If none of the other routes matched, we will show a 404. */}

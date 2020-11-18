@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import mapStoreToProps from '../../redux/mapStoreToProps';
+import './style.css';
 
 // Basic class component structure for React with default state
 // value setup. When making a new component be sure to replace
@@ -29,8 +30,11 @@ class PetHomepage extends Component {
     return (
       <div>
         <h2>{this.state.heading}</h2>
-        {JSON.stringify(this.props.store.pet.name)}
-        <p>This describes the whole app.</p>
+        {JSON.stringify(this.props.store.pet)}
+
+
+        
+                <p>This describes the whole app.</p>
         <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
               id felis metus. Vestibulum et pulvinar tortor. Morbi pharetra
@@ -62,6 +66,8 @@ class PetHomepage extends Component {
               Nullam non fermentum mauris. Sed in enim ac turpis faucibus
               pretium in sit amet nisi.
             </p>
+            
+
         <button onClick={this.nextPage}>Ready to Choose Pet!</button>
       </div>
     );

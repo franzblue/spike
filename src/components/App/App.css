@@ -2,6 +2,13 @@ html,
 body,
 #react-root {
   height: 100%;
+  background-image: url('https://cdn.wallpapersafari.com/13/67/75Wmsl.jpg');
+}
+
+.petinfo {
+  background-color: teal;
+  margin: 10px;
+  padding: 10px;
 }
 
 body {
