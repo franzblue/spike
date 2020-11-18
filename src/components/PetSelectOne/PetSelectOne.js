@@ -16,7 +16,7 @@ class PetOne extends Component {
 
   prevPage = () => {
     console.log('clicked');
-    this.props.history.push('/PetHomepage');
+    this.props.history.push('/pethomepage');
   }
 
   selectPet = () => {
@@ -27,7 +27,7 @@ class PetOne extends Component {
             console.log('selected', this.state.temperament);
       this.props.dispatch( {type: 'SELECT_PET', payload: this.state})
       alert('Congrats on the new pet!');
-      this.props.history.push('/Home');
+      this.props.history.push('/nest');
     }
   }
 
