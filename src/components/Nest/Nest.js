@@ -9,6 +9,7 @@ class Nest extends Component {
   render() {
     return (
       <div>
+        <NestItem />
       </div>
     );
   }
